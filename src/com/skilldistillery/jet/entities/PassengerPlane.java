@@ -6,9 +6,6 @@ public class PassengerPlane extends Jet {
 		super(model, speed, range, price);
 	
 	}
-	public void servicing() {
-		System.out.println(this.toString() + "Servicing flights across the World! \n");
-	}
 	
 	public void fly() {
 		System.out.printf(this.getClass().getSimpleName() + " Model: " + getModel() + ", Speed: " + getSpeed()
