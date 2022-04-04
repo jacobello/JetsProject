@@ -6,9 +6,8 @@ public class FighterJet extends Jet implements CombatReady  {
 		super(model, speed, range, price);
 	}
 
-	@Override
 	public void fight() {
-		System.out.println(this.toString() + "FIRE IN THE HOLE \n");
+		System.out.println(this.toString() + "FIRE IN THE HOLE *ß00M* \n");
 
 	}
 	@Override
@@ -17,7 +16,7 @@ public class FighterJet extends Jet implements CombatReady  {
 				+ "mph, Max range: " + getRange() + ", Price: $" + getPrice()
 				+ " Flight Time: %.2f hours, Mach= %.2f  \n", flightTime(), machSpeed());
 	}
-
+	@Override
 	public String toString() {
 		return "\n" + getModel() + ", Speed: " + getSpeed() + "mph, Max range: " + getRange() + ", Price: $"
 				+ getPrice() + ", Class: " + getClass().getSimpleName() + "\n";
